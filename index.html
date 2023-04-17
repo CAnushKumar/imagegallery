@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMAGE GALLERY</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+     <h1>IMAGE GALLERY</h1>
+    <div class="full-img" id="full-img-main">
+      <img src="./2.jpg" id="full-img" />
+      <span onclick="closeimg()">X</span>
+    </div>
+    <div class="gallery">
+      <img src="./2.jpg" onclick="openimg(this.src)" />
+      <img src="./13.jpg" onclick="openimg(this.src)" />
+      <img src="./1.jpg" onclick="openimg(this.src)" />
+      <img src="./3.jpg" onclick="openimg(this.src)" />
+      <img src="./4.jpg" onclick="openimg(this.src)" />
+      <img src="./5.jpg" onclick="openimg(this.src)" />
+      <img src="./6.jpg" onclick="openimg(this.src)" />
+      <img src="./7.jpg" onclick="openimg(this.src)" />
+      <img src="./8.jpg" onclick="openimg(this.src)" />
+      <img src="./9.jpg" onclick="openimg(this.src)" />
+      <img src="./10.jpg" onclick="openimg(this.src)" />
+      <img src="./11.jpg" onclick="openimg(this.src)" />
+      <img src="./12.jpg" onclick="openimg(this.src)" />
+      <img src="./14.jpg" onclick="openimg(this.src)" />
+      <img src="./15.jpg" onclick="openimg(this.src)" />
+      <img src="./16.jpg" onclick="openimg(this.src)" />
+    </div>
+    <script>
+      var fullimgmain = document.getElementById("full-img-main");
+      var fullimg = document.getElementById("full-img");
+
+      function openimg(image){
+        fullimgmain.style.display="flex";
+        fullimg.src=image;
+      }
+      function closeimg(){
+        fullimgmain.style.display="none";
+      }
+
+    </script>
+  </body>
+</html>
