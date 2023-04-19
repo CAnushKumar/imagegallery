@@ -62,5 +62,6 @@ h1{
     margin: 0px auto 5px;
     padding: 8px;
     overflow: scroll;
+    scrollbar: hidden;
     
 }
